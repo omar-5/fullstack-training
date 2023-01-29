@@ -52,7 +52,9 @@ body{
     width: 90%;
     margin: auto;
     padding-top: 10px;
+    padding-bottom: 10px;
     height: 20px;
+    border-bottom: 1px solid grey;
 }
 .container .section-2 .part-1 {
     display: flex;
@@ -65,5 +67,34 @@ body{
 }
 .container .section-2 .part-1 .definition{
     vertical-align: middle;
+    white-space: nowrap;
     
+}
+.container .section-2 .part-2 input {
+    padding: 0px 25px 0px 25px ;
+    margin-right: 5px;
+    background: linear-gradient(to top, #cdcdcd, #f7f7f7);
+    border: 1px solid #727272;
+    border-radius: 3px;
+}
+.container .section-3{
+    width: 90%;
+    margin: auto;
+}
+.container .section-3 .part-1 table colgroup .col-1,
+.container .section-3 .part-1 table colgroup .col-2{
+    width: 90px;
+}
+.container .section-3 .part-1 table tbody tr td .cellText{
+    font-weight: bold;
+}
+.container .section-3 .part-1 table tbody tr td .customer{
+    width: 70px;
+    background-image: url("./images/img-2.png");
+    background-position: 50px -2px;
+    background-repeat: no-repeat;
+    background-size: 19px 19px;
+    border: 1px solid #727272;
+    padding: 2px;
+    color: #1041a0
 }
