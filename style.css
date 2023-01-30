@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.table-1{
+    background: #40548c;
+    color: white;
+}
+.section-1{
+    display: flex;
+    flex-direction: row;
+}
+.table-1 tr td .facebook{
+    font-weight: bold;
+     font-size: 30px;
+      color: white; 
+      margin-left: 10px;
+}
+
+.container{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    background: linear-gradient(90deg, #bbc6da, #f4f3f7);
+}
+.container .left{
+    width: 50%;
+    height: 90vh;
+}
+.container .right{
+    height: 320px;
+    border: 2px solid red;
+    margin-left: 50px;
+    margin-top: 70px;
+    padding: 20px;
+}
+.container .left img{
+    width: 100%;
+    height: 100%;
+}
+.container .right form .signUp,
+.container .right form .desc{
+    font-size: 20px;
+    margin-bottom: 3px;
+    font-weight: bold;
+}
+.container .right form table tr td input{
+    height: 30px;
+    width: 270px;
+}
