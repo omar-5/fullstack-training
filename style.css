@@ -1,0 +1,163 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "lucida grande",tahoma,verdana,arial,sans-serif;
+}
+a{
+    text-decoration: none;
+    color:#40548c ;
+}
+
+
+.container{
+    height: 100vh;
+    width: 100%;
+
+}
+
+.container .section-1{
+    width: 100%;
+    height: 12%;
+    background: 40548c;
+}
+
+.container .table-1{
+    background: #40548c;
+    color: white;
+}
+
+.container .section-1 .table-1 tr td .facebook{
+    font-weight: bold;
+     font-size: 30px;
+      color: white; 
+      margin-left: 10px;
+}
+
+.container .section-1 .table-1 tr td .login{
+    background-color: rgb(13, 112, 199);
+    border: none;
+    color: white;
+    margin: 5px 0px 5px 17px;
+    padding: 4px;
+    font-size: 9px;
+    font-weight: 600;
+    border-radius: 3px;
+}
+.container .section-2{
+    width: 100%;
+    height: 87%;
+    display: flex;
+    flex-direction: row;
+}
+.container .section-2 .left{
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(white, #D3D8E8);
+
+}
+
+.container .section-2 .left .fbHelp{
+    margin-top: 30px;
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 10px;
+
+}
+.container .section-2 .left .gainttext{
+    margin-left: 120px;
+    font-size: 38px;
+    color: #40548c;
+}
+.container .section-2 .left .worldConnect{
+    background-image: url("./mainImg.jpg");
+    width: 562px;
+    height: 284px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    
+}
+
+
+.container .section-2 .right{
+    height: 100%;
+    width: 50%;
+    background: linear-gradient(white, #D3D8E8);
+} 
+
+.container .section-2 .right .signUp{
+    margin-left: 70px;
+    margin-top: 30px;
+
+   
+}
+
+.container .section-2 .right .signUp .signUptext{
+    font-size: 20px;
+    margin-bottom: 3px;
+    font-weight: bold;
+}
+.container .section-2 .right .signUp  .desc{
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 20px;
+} 
+.container .section-2 .right .signUp form .data {
+    margin-left: 15px;
+    font-size: 10px;
+    /* display: flex;
+    direction: row; */
+    flex-wrap: wrap;
+
+}
+.container .section-2 .right .signUp form .data .label{
+    margin-top: 4px;
+    display: inline-block;
+    width: 92px;
+    text-align: right;
+}
+.container .section-2 .right .signUp form .data .value{
+    display: inline-block;
+    width: 380px;
+}
+.container .section-2 .right .signUp form .data .value input{
+    width: 380px;
+    height: 20px;
+    margin-bottom: 5px;
+}
+.container .section-2 .right .signUp form .data .gender {
+    display: inline-block;
+}
+.container .section-2 .right .signUp form .data .gender select{
+    width: 80px;
+    height: 20px;
+    margin-bottom: 5px;
+    display: inline-block;
+}
+.container .section-2 .right .signUp form .data .bdy {
+    display: inline-block;
+}
+.container .section-2 .right .signUp form .data .bdy select{
+    width: 80px;
+}
+.container .section-2 .right .signUp form .data .userThoughts {
+    margin-left: 95px;
+    margin-top: 4px;
+    margin-bottom: 6px;
+}
+.container .section-2 .right .signUp form .data .signUpButton{
+    margin-left: 95px;
+}
+.container .section-2 .right .signUp form .data .signUpButton input{
+    background-color: #69a74e;
+    background: linear-gradient(#67ae55, #578843);
+    border: none;
+    color: white;
+    text-align: center;
+    padding: 5px 28px;
+    font-weight: 400;
+    font-size: 12px;
+}
+.container .section-2 .right .signUp form .data .creatSpecialPage{
+    margin-left: 60px;
+    margin-top: 19px;
+}
