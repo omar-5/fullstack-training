@@ -1,0 +1,214 @@
+/* 
+talk about overflow hidden in case the health jumped over 100 to disallow overlapping
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+}
+.container .header-section{
+    width: 100%;
+    height: 50px;
+    background-color: #7c161d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container .header-section .text {
+    color: white;
+}
+.container .health-section{
+    width: 100%;
+    height: 150px;
+    /* background-color:green; */
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+}
+.container .health-section .monster-health{
+    width: 40%;
+    height: 50%;
+    /* background-color: yellow; */
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    margin-top: 10px;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    border-radius: 10px;
+    color: black;
+    font-weight: bold;
+
+
+
+}
+.container .health-section .your-health{
+    width: 40%;
+    height: 50%;
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    margin-top: 10px;
+    box-shadow: 0 3px 10px rgb(0,0,0,0.2);
+    border-radius: 10px;
+    color: black;
+    font-weight: bold;
+
+}
+.container .health-section .monster-health .monester-heath-percentage{
+    width: 98%;
+    height: 30%;
+    background-color: #fde5e4;
+    border: 1px solid black;
+}
+.container .health-section .monster-health .monester-heath-percentage .monester-heath-percentage-bar{
+    width: 100%;
+    height: 100%;
+    background-color: #05a876; 
+}
+
+.container .health-section .your-health .your-heath-percentage{
+    width: 98%;
+    height: 30%;
+    background-color: #fde5e4;
+    overflow: hidden;
+    border: 1px solid black;
+}
+.container .health-section .your-health .your-heath-percentage .your-heath-percentage-bar{
+    width: 100%;
+    height: 100%;
+    background-color: #05a876;
+}
+.container .result-section {
+    width: 100%;
+    height: 200px;
+    display: none;
+    justify-content: center;
+}
+.container .result-section .result{
+    width: 40%;
+    height: 100%;
+    box-shadow: 0 3px 10px rgb(0,0,0,0.2);
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+
+}
+.container .result-section .result .text{
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+}
+.container .result-section .result .final-result{
+    color: black;
+    font-weight: bold;
+    font-size: 15px;
+}
+.container .result-section .result  button{
+    padding: 17px 20px;
+    background-color: #7c1659;
+    color: white;
+    /* margin: auto; */
+    border: none;
+    border-radius: 10px;
+}
+.container .buttons-section{
+    width: 100%;
+    height: 150px;
+    /* background-color:green; */
+    display: flex;
+    justify-content: center;
+}
+.container .buttons-section .buttons-left{
+    width: 20%;
+    height: 150px;
+    /* background-color: aqua; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+}
+.container .buttons-section .buttons-right{
+    width: 20%;
+    height: 150px;
+    /* background-color: red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+}
+.container .buttons-section .buttons-right .button,
+.container .buttons-section .buttons-left .button
+{
+    background-color: #7c1659;
+    color: white;
+    padding: 8px 30px ;
+    /* margin: auto; */
+    border: none;
+    border-radius: 10px;
+    font-size: 9px;
+    width: 55%;
+}
+.container .log-section {
+    width: 100%;
+    height: auto;
+    /* background-color: red; */
+}
+.container .log-section .battle-log{
+    width: 40%;
+    height: auto;
+    /* background-color: green; */
+    margin: auto;
+    box-shadow: 0 3px 10px rgb(0,0,0,0.2);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+}
+.container .log-section .battle-log .text {
+    color: black;
+    font-weight: bold;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+#log{
+    font-size: 10px;
+    margin: auto;
+}
+#logs{
+    font-size: 10px;
+    font-weight: 300;
+}
+#monster-log{
+    color: #da8b07;
+}
+#player-log{
+    color:#7e18ff;
+}
+#heals-log{
+    color: #098209;
+}
+#attacks-log{
+    color:  #ff3333;
+}
+
