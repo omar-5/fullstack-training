@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <script src="index.js" ></script>
+    <title>Game</title>
+</head>
+<body>
+    <!-- start of container -->
+    <div class="container" id="container">
+      
+        <!-- start of header section -->
+        <div class="header-section" id="header-section">
+            <div class="text">
+                Kill The Monster
+            </div>
+        </div>  
+        <!-- end of header section -->
+        
+        <!-- start of health section -->
+        <div class="health-section" id="health-section">
+            <div class="monster-health">
+                <div class="text">
+                    Monster health
+                </div>
+                <div class="monester-heath-percentage" id="monester-heath-percentage">
+                    <div class="monester-heath-percentage-bar" id="monester-heath-percentage-bar">
+                    </div>
+                </div>
+            </div>
+            <div class="your-health">
+                <div class="text">
+                    Your health
+                </div>
+                <div class="your-heath-percentage" id="your-heath-percentage">
+                    <div class="your-heath-percentage-bar" id="your-heath-percentage-bar">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end of health section -->
+
+        <!-- start of result section -->
+        <div class="result-section" id="result-section">
+            <div class="result">
+                <div class="text">
+                    Game Over!
+                </div>
+                <div class="final-result" id="final-result">
+                </div>
+                <button class="new-game" onclick="startNewGame()">
+                    Start New Game
+                </button>
+            </div>
+
+        </div>
+        <!-- end of result section -->
+
+        <!-- start of buttons section -->
+        <div class="buttons-section" id="buttons-section">
+            <div class="buttons-left">
+                <button class="button" onclick="attack(normalAttack = true)">
+                    ATTACK
+                </button>
+                <button class="button" onclick="heal()">
+                    HEAL
+                </button>
+
+            </div>
+            <div class="buttons-right">
+                <button class="button" onclick="attack(normalAttack = false)">
+                    SPECIAL Attack
+                </button>
+                <button class="button" onclick="result(playerWins = false, draw = false )">
+                   GIVE UP
+                </button>
+            </div>
+        </div>
+        <!-- end of buttons section -->
+
+        <!-- start of log section -->
+        <div class="log-section" id="log-section" > 
+            <div class="battle-log">
+                <div class="text">
+                    Battle Log
+                </div>
+                <div id="logs"> 
+                </div>
+            </div>
+        </div>
+        <!-- end of log section -->
+
+    </div>
+    <!-- end of container -->
+</body>
+</html>
